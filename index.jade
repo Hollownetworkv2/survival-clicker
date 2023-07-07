@@ -1,7 +1,7 @@
 head
-    title Survival Clicker
+    title Survial Clicker
     meta(charset="UTF-8")
-    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
+    link(rel="stylesheet", type="text/css", href="bootstrap.min.css")
 body
     .container-fluid
         .row: .col-lg-12
@@ -118,78 +118,78 @@ body
                     button.btn.btn-default.consumable(money="-1000", energy="11.5", hydration="0.35", stomach="3.25", health="-0.000001") Pro Engineered Food From Space
                     button.btn.btn-default.consumable(money="-10000", energy="12.5", hydration="0.45", stomach="3", health="-0.0000001") Pro Engineered Food From ETs
                     button.btn.btn-default.consumable(money="-100000", energy="13.5", hydration="0.48", stomach="2.9", health="-0.00000001") Pro Engineered Food From ETs (Other Galaxy)
-                .tab-pane(id="drink")
-                    button.btn.btn-default.consumable(money="0", hydration="1", stomach="9.5", health="-0.5") Drain Water
-                    button.btn.btn-default.consumable(money="-1", hydration="5", stomach="4.5", health="-0.08") Suspicious Water
-                    button.btn.btn-default.consumable(money="-1.25", hydration="1.5", energy="2", stomach="3.5", health="-0.15") Energy Drink
-                    button.btn.btn-default.consumable(money="-1.5", hydration="10", stomach="3.5", health="-0.01") Water
-                    button.btn.btn-default.consumable(money="-5", hydration="11", stomach="3", health="-0.001") Quality Water
-                    button.btn.btn-default.consumable(money="-20", hydration="12", stomach="2.5", health="-0.0001") Premium Water
-                    button.btn.btn-default.consumable(money="-125", hydration="13", stomach="2.25", health="-0.00001") Pro Engineered Water
-                    button.btn.btn-default.consumable(money="-800", hydration="14", stomach="2.05", health="-0.000001") Pro Engineered Water From Space
-                    button.btn.btn-default.consumable(money="-10000", hydration="15", stomach="2", health="-0.0000001") Pro Engineered Water From ETs
-                    button.btn.btn-default.consumable(money="-100000", hydration="16", stomach="1.95", health="-0.00000001") Pro Engineered Water From ETs (Other Galaxy)
-                .tab-pane(id="investment")
-                    button.btn.btn-default.consumable(money="-1", moneyincome="0.01", title="Get 0.01$ per second") Invest
-                    button.btn.btn-default.consumable(money="-10", moneyincome="0.1", title="Get 0.1$ per second") Invest
-                    button.btn.btn-default.consumable(money="-100", moneyincome="1", title="Get 1$ per second") Invest
-                    button.btn.btn-default.consumable(money="-1000", moneyincome="10", title="Get 10$ per second") Invest
-                    button.btn.btn-default.consumable(money="-10000", moneyincome="100", title="Get 100$ per second") Invest
-                    button.btn.btn-default.consumable(money="-100000", moneyincome="1000", title="Get 1k$ per second") Invest
-                    button.btn.btn-default.consumable(money="-1000000", moneyincome="10000", title="Get 10k$ per second") Invest
-                    button.btn.btn-default.consumable(money="-10000000", moneyincome="100000", title="Get 100k$ per second") Invest
-                    button.btn.btn-default.consumable(money="-100000000", moneyincome="1000000", title="Get 1M$ per second") Invest
-                    button.btn.btn-default.consumable(money="-1000000000", moneyincome="10000000", title="Get 10M$ per second") Invest
-                    button.btn.btn-default.consumable(money="-10000000000", moneyincome="100000000", title="Get 100M$ per second") Invest
-                    button.btn.btn-default.consumable(money="-100000000000", moneyincome="1000000000", title="Get 1b$ per second") Invest
-                    button.btn.btn-default.consumable(money="-1000000000000", moneyincome="10000000000", title="Get 10b$ per second") Invest
-                    button.btn.btn-default.consumable(money="-10000000000000", moneyincome="100000000000", title="Get 100b$ per second") Invest
-                .tab-pane(id="chems")
-                    button.btn.btn-default.consumable(money="-30", stamina="-10", health="-0.5", healthcap="-0.01", healthcaploss="0.001", staminacap="-0.02", staminaregen="-0.0002", temp="-1", title="Lowers body temperature") Spray Old Freon On Self
-                    button.btn.btn-default.consumable(money="-30", stamina="-50", health="-0.5", healthcap="-0.05", healthcaploss="0.002", staminacap="-0.2", staminaregen="-0.002", temp="-3", title="Lowers body temperature") Drink Old Freon On Self
-                    button.btn.btn-default.consumable(money="-40", stomach="25", stomachcap="-1", stamina="50", health="-0.5", healthcap="-0.01", staminacap="-0.02", staminaregen="-0.0002", temp="0.01", title="Improves stamina with little effort") Stamina Restorer Milk
-                    button.btn.btn-default.consumable(money="-45", stomach="25", stomachcap="-1.5", health="-2.5", healthcap="-1", staminacap="0.2", staminaregen="0.0002", temp="0.02", title="Improves stamina with little effort") Stamina Power Powder
-                    button.btn.btn-default.consumable(money="-50", stomach="-50", stamina="-100", stomachcap="-0.5", health="-2.5", healthcap="-1", staminacap="-0.05", temp="0.1", title="Destroys the stomach content safely (for the most part)") Light Acid
-                    button.btn.btn-default.consumable(money="-75", stomach="-100", stamina="-100", stomachcap="-2", health="-5", healthcap="-1.75", staminacap="-0.1", temp="0.2", title="Destroys the stomach content safely (for the most part)") Medium Acid
-                    button.btn.btn-default.consumable(money="-100", health="-3", healthcap="-3", digestionmulti="0.05", stomachcapin="-0.07", staminacap="-0.02", title="Improves stomach digestion speed") Digestion Pills From Trash
-                    button.btn.btn-default.consumable(money="-650", health="250", healthcaploss="2", title="Restores health") Discarded Bloodbag
-                    button.btn.btn-default.consumable(money="-700", health="-5.5", stamina="-200", healthcap="-3", healthcaploss="0.005", staminacap="0.4", staminaregen="0.001", temp="0.01", title="Improves stamina with little effort") Streoids
-                .tab-pane(id="black")
-                    button.btn.btn-default.consumable(money="-450", stomach="10", stomachcap="-1", staminaregen="20", health="-0.5", healthcaploss="0.1", staminacap="-0.03", title="Autoinjects stamina restorer milk") Stamina Restorer Milk Auto Injector
-                    button.btn.btn-default.consumable(money="-500", healthcaploss="0.1", stomachin="7", hydrationin="2", staminacapin="-0.1", moneyincome="-5", title="Inject water straight into the stomach (-5$/s)") Dirty Water Auto Injector
-                    button.btn.btn-default.consumable(money="-500", healthcaploss="0.1", stomachin="7", staminacapin="-0.1", energyin="2", moneyincome="-10", title="Inject food straight into the stomach (-10$/s)") Dirty Food Auto Injector
-                    button.btn.btn-default.consumable(money="-550", healthcaploss="0.2", stomachin="-10", stomachcapin="-0.01", moneyincome="-12", tempoffsetp="0.01", title="Inject acid straight into the stomach (-12$/s)") Medium Acid Auto Injector
-                .tab-pane(id="medical")
-                    button.btn.btn-default.consumable(money="-2000", health="440", title="Restores health") Fresh Bloodbag
-                    button.btn.btn-default.consumable(money="-5000", health="-5", healthcap="-0.1", stomach="-500", title="Removes stomach content") Stomach Content Removal
-                    button.btn.btn-default.consumable(money="-10000", healthcap="-0.5", hydrationin="1", energyin="1", staminacapin="-0.05", moneyincome="-20", title="Inject needed stuff straight into the blood (-20$/s)") Food/Water Auto Injector
-                    button.btn.btn-default.consumable(money="-50000", healthcaploss="-1", title="Reduces maximum health decrease over time") Organ Transplant
-                    button.btn.btn-default.consumable(money="-70000", healthcap="-5", stomachcap="50", digestionmulti="-0.01", title="Makes stomach larger") Stomach Enlargement Op
-                .tab-pane(id="bribe")
-                    button.btn.btn-default.consumable(money="-70000", taxes="0.0001") Bribe for 0.01% less taxes
-                    button.btn.btn-default.consumable(money="-700000", taxes="0.001") Bribe for 0.1% less taxes
-                    button.btn.btn-default.consumable(money="-7000000", taxes="0.01") Bribe for 1% less taxes
-                    button.btn.btn-default.consumable(money="-70000000", taxes="0.1") Bribe for 10% less taxes
-                .tab-pane(id="et")
-                    button.btn.btn-default.consumable(money="-75000", health="-5", healthcap="-0.01", stomach="-750", staminacap="-0.01" title="Removes stomach content with advanced tech") Stomach Content Removal
-                    button.btn.btn-default.consumable(money="-85000", healthcap="-0.2", stomachcap="95", digestionmulti="-0.007", title="Makes stomach larger") Stomach Enlargement Op Advanced
-                    button.btn.btn-default.consumable(money="-90000", health="-1", healthcap="-0.5", healthcaploss="0.0005", staminacap="0.4", staminaregen="0.001", title="Improves stamina with little effort") Muscle Upgrade
-                    button.btn.btn-default.consumable(money="-95000", health="-3", healthcap="-3", digestionmulti="0.05", stomachcapin="-0.01", title="Improves stomach digestion speed") Pro Digestion Pills
-                    button.btn.btn-default.consumable(money="-99000", health="-7", healthcap="-9", digestionmulti="-0.05", stomachcapin="-0.01", title="Decreases stomach digestion speed (only use if needed)") Pro Digestion Slow Pills
-                    button.btn.btn-default.consumable(money="-100000", hydration="1500", healthcap="-0.01", title="Injects 1500 water into the body") Hydro-Injection
-                    button.btn.btn-default.consumable(money="-100000", energy="1000", healthcap="-0.01", title="Injects 1000 energy into the body") Energy-Injection
-                    button.btn.btn-default.consumable(money="-500000", hydrationin="2", healthcap="-0.4", staminacapin="-0.02", moneyincome="-500" title="Auto injects water into the body (-500$/s)") Hydro-Injection Auto Injector
-                    button.btn.btn-default.consumable(money="-500000", energyin="2", healthcap="-0.4", staminacapin="-0.02", moneyincome="-500" title="Auto injects energy/food into the body (-500$/s)") Energy-Injection Auto Injector
-                .tab-pane(id="research")
-                    button.btn.btn-default.consumable.buyable(buyname="res2", money="500", temp="-0.01", healthcaploss="0.0001", stamina="-1", staminacap="-0.1") Lie on the ET experiment table
-                    button.btn.btn-default.consumable.buyable(buyname="res3", money="-500000", temp="-3", stamina="-1", healthcap="-0.001", staminacap="-0.1", energycap="1", hydrationcap="1") Eat ETs head
-                    p
-                    button.btn.btn-default.consumable(money="-1000000", unlock="res1") Kidnap Humans and Conduct Experiments
-                    button.btn.btn-default.consumable.buyable(money="-1500000", buyname="res1", unlock="res2") Ask ETs about Experiment Results
-                    button.btn.btn-default.consumable.buyable(money="-5000000", health="-100", healthcaploss="0.01", buyname="res2", unlock="res3", title="You will loose 100 hp!") Conduct Experiments On ETs
-                    button.btn.btn-default.consumable.buyable(money="-50000000", health="-250", healthcaploss="0.01", buyname="res3", unlock="res4", title="You will loose 250 hp!") Enslave One ET race
-                    button.btn.btn-default.consumable.buyable(money="-500000000", health="-280", healthcaploss="0.01", buyname="res4", unlock="res5", title="You will loose 280 hp!") Take Over Some ET Tech
-                    button.btn.btn-default.consumable.buyable(money="-5000000000", health="-300", healthcaploss="0.01", buyname="res5", unlock="res6", title="You will loose 300 hp!") Enslave ETs in the Galaxy
-        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js")
-        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous")
+                 .tab-pane(id="drink")
+                     button.btn.btn-default.consumable(money="0", hydration="1", stomach="9.5", health="-0.5") Drain Water
+                     button.btn.btn-default.consumable(money="-1", hydration="5", stomach="4.5", health="-0.08") Suspicious Water
+                     button.btn.btn-default.consumable(money="-1.25", hydration="1.5", energy="2", stomach="3.5", health="-0.15") Energy Drink
+                     button.btn.btn-default.consumable(money="-1.5", hydration="10", stomach="3.5", health="-0.01") Water
+                     button.btn.btn-default.consumable(money="-5", hydration="11", stomach="3", health="-0.001") Quality Water
+                     button.btn.btn-default.consumable(money="-20", hydration="12", stomach="2.5", health="-0.0001") Premium Water
+                     button.btn.btn-default.consumable(money="-125", hydration="13", stomach="2.25", health="-0.00001") Pro Engineered Water
+                     button.btn.btn-default.consumable(money="-800", hydration="14", stomach="2.05", health="-0.000001") Pro Engineered Water From Space
+                     button.btn.btn-default.consumable(money="-10000", hydration="15", stomach="2", health="-0.0000001") Pro Engineered Water From ETs
+                     button.btn.btn-default.consumable(money="-100000", hydration="16", stomach="1.95", health="-0.00000001") Pro Engineered Water From ETs (Other Galaxy)
+                  .tab-pane(id="investment")
+                      button.btn.btn-default.consumable(money="-1", moneyincome="0.01", title="Get 0.01$ per second") Invest
+                      button.btn.btn-default.consumable(money="-10", moneyincome="0.1", title="Get 0.1$ per second") Invest
+                      button.btn.btn-default.consumable(money="-100", moneyincome="1", title="Get 1$ per second") Invest
+                      button.btn.btn-default.consumable(money="-1000", moneyincome="10", title="Get 10$ per second") Invest
+                      button.btn.btn-default.consumable(money="-10000", moneyincome="100", title="Get 100$ per second") Invest
+                      button.btn.btn-default.consumable(money="-100000", moneyincome="1000", title="Get 1k$ per second") Invest
+                      button.btn.btn-default.consumable(money="-1000000", moneyincome="10000", title="Get 10k$ per second") Invest
+                      button.btn.btn-default.consumable(money="-10000000", moneyincome="100000", title="Get 100k$ per second") Invest
+                      button.btn.btn-default.consumable(money="-100000000", moneyincome="1000000", title="Get 1M$ per second") Invest
+                      button.btn.btn-default.consumable(money="-1000000000", moneyincome="10000000", title="Get 10M$ per second") Invest
+                      button.btn.btn-default.consumable(money="-10000000000", moneyincome="100000000", title="Get 100M$ per second") Invest
+                      button.btn.btn-default.consumable(money="-100000000000", moneyincome="1000000000", title="Get 1b$ per second") Invest
+                      button.btn.btn-default.consumable(money="-1000000000000", moneyincome="10000000000", title="Get 10b$ per second") Invest
+                      button.btn.btn-default.consumable(money="-10000000000000", moneyincome="100000000000", title="Get 100b$ per second") Invest
+                 .tab-pane(id="chems")
+                      button.btn.btn-default.consumable(money="-30", stamina="-10", health="-0.5", healthcap="-0.01", healthcaploss="0.001", staminacap="-0.02", staminaregen="-0.0002", temp="-1", title="Lowers body temperature") Spray Old Freon On Self
+                      button.btn.btn-default.consumable(money="-30", stamina="-50", health="-0.5", healthcap="-0.05", healthcaploss="0.002", staminacap="-0.2", staminaregen="-0.002", temp="-3", title="Lowers body temperature") Drink Old Freon On Self
+                      button.btn.btn-default.consumable(money="-40", stomach="25", stomachcap="-1", stamina="50", health="-0.5", healthcap="-0.01", staminacap="-0.02", staminaregen="-0.0002", temp="0.01", title="Improves stamina with little effort") Stamina Restorer Milk
+                      button.btn.btn-default.consumable(money="-45", stomach="25", stomachcap="-1.5", health="-2.5", healthcap="-1", staminacap="0.2", staminaregen="0.0002", temp="0.02", title="Improves stamina with little effort") Stamina Power Powder
+                      button.btn.btn-default.consumable(money="-50", stomach="-50", stamina="-100", stomachcap="-0.5", health="-2.5", healthcap="-1", staminacap="-0.05", temp="0.1", title="Destroys the stomach content safely (for the most part)") Light Acid
+                      button.btn.btn-default.consumable(money="-75", stomach="-100", stamina="-100", stomachcap="-2", health="-5", healthcap="-1.75", staminacap="-0.1", temp="0.2", title="Destroys the stomach content safely (for the most part)") Medium Acid
+                      button.btn.btn-default.consumable(money="-100", health="-3", healthcap="-3", digestionmulti="0.05", stomachcapin="-0.07", staminacap="-0.02", title="Improves stomach digestion speed") Digestion Pills From Trash
+                      button.btn.btn-default.consumable(money="-650", health="250", healthcaploss="2", title="Restores health") Discarded Bloodbag
+                      button.btn.btn-default.consumable(money="-700", health="-5.5", stamina="-200", healthcap="-3", healthcaploss="0.005", staminacap="0.4", staminaregen="0.001", temp="0.01", title="Improves stamina with little effort") Streoids
+                  .tab-pane(id="black")
+                      button.btn.btn-default.consumable(money="-450", stomach="10", stomachcap="-1", staminaregen="20", health="-0.5", healthcaploss="0.1", staminacap="-0.03", title="Autoinjects stamina restorer milk") Stamina Restorer Milk Auto Injector
+                      button.btn.btn-default.consumable(money="-500", healthcaploss="0.1", stomachin="7", hydrationin="2", staminacapin="-0.1", moneyincome="-5", title="Inject water straight into the stomach (-5$/s)") Dirty Water Auto Injector
+                      button.btn.btn-default.consumable(money="-500", healthcaploss="0.1", stomachin="7", staminacapin="-0.1", energyin="2", moneyincome="-10", title="Inject food straight into the stomach (-10$/s)") Dirty Food Auto Injector
+                      button.btn.btn-default.consumable(money="-550", healthcaploss="0.2", stomachin="-10", stomachcapin="-0.01", moneyincome="-12", tempoffsetp="0.01", title="Inject acid straight into the stomach (-12$/s)") Medium Acid Auto Injector
+                  .tab-pane(id="medical")
+                      button.btn.btn-default.consumable(money="-2000", health="440", title="Restores health") Fresh Bloodbag
+                      button.btn.btn-default.consumable(money="-5000", health="-5", healthcap="-0.1", stomach="-500", title="Removes stomach content") Stomach Content Removal
+                      button.btn.btn-default.consumable(money="-10000", healthcap="-0.5", hydrationin="1", energyin="1", staminacapin="-0.05", moneyincome="-20", title="Inject needed stuff straight into the blood (-20$/s)") Food/Water Auto Injector
+                      button.btn.btn-default.consumable(money="-50000", healthcaploss="-1", title="Reduces maximum health decrease over time") Organ Transplant
+                      button.btn.btn-default.consumable(money="-70000", healthcap="-5", stomachcap="50", digestionmulti="-0.01", title="Makes stomach larger") Stomach Enlargement Op
+                  .tab-pane(id="bribe")
+                      button.btn.btn-default.consumable(money="-70000", taxes="0.0001") Bribe for 0.01% less taxes
+                      button.btn.btn-default.consumable(money="-700000", taxes="0.001") Bribe for 0.1% less taxes
+                      button.btn.btn-default.consumable(money="-7000000", taxes="0.01") Bribe for 1% less taxes
+                      button.btn.btn-default.consumable(money="-70000000", taxes="0.1") Bribe for 10% less taxes
+                  .tab-pane(id="et")
+                      button.btn.btn-default.consumable(money="-75000", health="-5", healthcap="-0.01", stomach="-750", staminacap="-0.01" title="Removes stomach content with advanced tech") Stomach Content Removal
+                      button.btn.btn-default.consumable(money="-85000", healthcap="-0.2", stomachcap="95", digestionmulti="-0.007", title="Makes stomach larger") Stomach Enlargement Op Advanced
+                      button.btn.btn-default.consumable(money="-90000", health="-1", healthcap="-0.5", healthcaploss="0.0005", staminacap="0.4", staminaregen="0.001", title="Improves stamina with little effort") Muscle Upgrade
+                      button.btn.btn-default.consumable(money="-95000", health="-3", healthcap="-3", digestionmulti="0.05", stomachcapin="-0.01", title="Improves stomach digestion speed") Pro Digestion Pills
+                      button.btn.btn-default.consumable(money="-99000", health="-7", healthcap="-9", digestionmulti="-0.05", stomachcapin="-0.01", title="Decreases stomach digestion speed (only use if needed)") Pro Digestion Slow Pills
+                      button.btn.btn-default.consumable(money="-100000", hydration="1500", healthcap="-0.01", title="Injects 1500 water into the body") Hydro-Injection
+                      button.btn.btn-default.consumable(money="-100000", energy="1000", healthcap="-0.01", title="Injects 1000 energy into the body") Energy-Injection
+                      button.btn.btn-default.consumable(money="-500000", hydrationin="2", healthcap="-0.4", staminacapin="-0.02", moneyincome="-500" title="Auto injects water into the body (-500$/s)") Hydro-Injection Auto Injector
+                      button.btn.btn-default.consumable(money="-500000", energyin="2", healthcap="-0.4", staminacapin="-0.02", moneyincome="-500" title="Auto injects energy/food into the body (-500$/s)") Energy-Injection Auto Injector
+                  .tab-pane(id="research")
+                      button.btn.btn-default.consumable.buyable(buyname="res2", money="500", temp="-0.01", healthcaploss="0.0001", stamina="-1", staminacap="-0.1") Lie on the ET experiment table
+                      button.btn.btn-default.consumable.buyable(buyname="res3", money="-500000", temp="-3", stamina="-1", healthcap="-0.001", staminacap="-0.1", energycap="1", hydrationcap="1") Eat ETs head
+                      p
+                      button.btn.btn-default.consumable(money="-1000000", unlock="res1") Kidnap Humans and Conduct Experiments
+                      button.btn.btn-default.consumable.buyable(money="-1500000", buyname="res1", unlock="res2") Ask ETs about Experiment Results
+                      button.btn.btn-default.consumable.buyable(money="-5000000", health="-100", healthcaploss="0.01", buyname="res2", unlock="res3", title="You will loose 100 hp!") Conduct Experiments On ETs
+                      button.btn.btn-default.consumable.buyable(money="-50000000", health="-250", healthcaploss="0.01", buyname="res3", unlock="res4", title="You will loose 250 hp!") Enslave One ET race
+                      button.btn.btn-default.consumable.buyable(money="-500000000", health="-280", healthcaploss="0.01", buyname="res4", unlock="res5", title="You will loose 280 hp!") Take Over Some ET Tech
+                      button.btn.btn-default.consumable.buyable(money="-5000000000", health="-300", healthcaploss="0.01", buyname="res5", unlock="res6", title="You will loose 300 hp!") Enslave ETs in the Galaxy
+        script(src="jquery-2.1.4.min.js")
+        script(src="bootstrap.min.js")
         script(src="script.js")
