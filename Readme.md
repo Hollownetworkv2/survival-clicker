@@ -6,7 +6,7 @@ Abandoned and unsupported
 
 Game logic is in `script.js` file, while purchasable items are listed in the document itself, see `index.jade`
 
-[Play the game here](http://survival.clicker.7777.lt)
+[Play the game here](http://MantasPauliukonis.github.io/survival-clicker)
 
 ## Compiling
 
