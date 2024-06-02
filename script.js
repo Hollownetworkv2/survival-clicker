@@ -4,7 +4,7 @@ var savegamename = 'savegame_' + $('#savegamename').text();
 
 function init() {
     game = {
-        stomach: 100,
+        stomach: 1000,
         stomachcap: 500,
         stomachcapin: 0,
         stomachin: 0,
